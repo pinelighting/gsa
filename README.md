@@ -1,5 +1,5 @@
 # Getting Start with Ansible
-This is a brief set of instructions to get an environment ready for Ansible.  The starting point is from a new distribution setup.  In my example, am using Ubuntu 20.04 LTS.
+This is a brief set of instructions to get an environment ready for Ansible.  The starting point is from a new distribution setup.  In my example, I am using Ubuntu 20.04 LTS.
 
 ## Get the latest updates for the Linux distribution
 * `sudo apt update`
