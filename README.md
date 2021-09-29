@@ -23,3 +23,25 @@ A directory call `aoscx-ansible-collection` will be created and will have the ne
 
 ### Intall the AOS-CX collections
 * `ansible-galaxy collection install arubanetworks.aoscx`
+
+At this point, the installation is complete and your Ansible control node is ready.
+
+
+### Info from my running system:
+```
+ubuntu-server:~$ ansible --version
+ansible 2.9.6
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/michaelw/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  ```
+### Quick ansible validation
+```
+ubuntu-server:~$ ansible localhost -m ping
+localhost | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+```
