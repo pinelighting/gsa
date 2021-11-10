@@ -2,15 +2,12 @@
 This is a brief set of instructions to get an environment ready for Ansible.  The starting point is from a new distribution setup.  In my example, I am using Ubuntu 20.04 LTS.
 
 ## Get the latest updates for the Linux distribution
-* `sudo apt update`
-* `sudo apt -y upgrade`
+* `sudo apt update; sudo apt -y upgrade`
 
 ## Install Linux Packages
 Run the commands below to install packages for git and ansible.
-* `sudo apt install -y git`
-* `sudo apt install -y python3-pip`
 * `sudo add-apt-repository --yes --update ppa:ansible/ansible`
-* `sudo apt install -y ansible`
+* `sudo apt install -y git python3-pip ansible`
 
 ## Clone the Aruba AOS-CX Ansible Collection
 A directory call `aoscx-ansible-collection` will be created and will have the necessary files to continue with setting up Ansible when you run the next command
@@ -20,8 +17,6 @@ A directory call `aoscx-ansible-collection` will be created and will have the ne
 * `cd ./aoscx-ansible-collection`
 * `ansible-galaxy install -r requirements.yml`
 * `python3 -m pip install -r requirements.txt`
-
-### Intall the AOS-CX collections
 * `ansible-galaxy collection install arubanetworks.aoscx`
 
 At this point, the installation is complete and your Ansible control node is ready.
