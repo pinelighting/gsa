@@ -25,12 +25,15 @@ At this point, the installation is complete and your Ansible control node is rea
 ### Info from my running system:
 ```
 ubuntu-server:~$ ansible --version
-ansible 2.9.6
+ansible [core 2.11.6]
   config file = /etc/ansible/ansible.cfg
-  configured module search path = ['/home/michaelw/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  configured module search path = ['/home/michaelw-test/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/michaelw-test/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/bin/ansible
-  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  python version = 3.8.10 (default, Sep 28 2021, 16:10:42) [GCC 9.3.0]
+  jinja version = 2.10.1
+  libyaml = True
   ```
 ### Quick ansible validation
 ```
